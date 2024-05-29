@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0" />
+    <title>
+          Make Dark Mode for Websites using HTML CSS & JavaScript
+      </title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+
+        }
+        img{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        height: 400px;
+        width: 200px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        button:hover{
+            color: black;
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Myntra</h1>
+    <p>Myntra Is Shooping Website</p>
+
+    <img src=
+    "https://i.pinimg.com/736x/72/5d/42/725d42fb10fe3fbf5239b86897c55780.jpg" />
+    <div>
+        <button onclick="darkMode()">Darkmode</button>
+    </div>
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
